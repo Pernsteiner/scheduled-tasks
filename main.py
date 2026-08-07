@@ -13,8 +13,9 @@ import random
 import datetime as dt
 import pandas
 
-my_email = "schwarzesloch13@gmail.com"
-password = "pvxc jeku rzzz atwc"
+my_email = os.environ.get("MY_EMAIL")
+password = os.environ.get("MY_PASSWORD")
+
 
 letters = ["letter_templates/letter_1.txt", "letter_templates/letter_2.txt", "letter_templates/letter_3.txt"]
 
