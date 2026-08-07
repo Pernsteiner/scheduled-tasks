@@ -28,6 +28,7 @@ birthday_days = data.day.tolist()
 birthday_months = data.month.tolist()
 #message = ""
 if day in birthday_days and month in birthday_months:
+    print("Hey")
     relevant_data1 = data[data.day == day ]
     relevant_data = relevant_data1[relevant_data1.month == month]
     for (index, row) in relevant_data.iterrows():
